@@ -40,11 +40,11 @@ public class Warrior extends Character {
     // TODO: Implement methods from Character interface
     // You need to define those methods in Character interface first!
 
-    // Example method structure:
     public String getName() {
         return name;
     }
 
+    @Override
     public void displayStats() {
         System.out.println("=== " + name + " (Warrior) ===");
         System.out.println("Health: " + health);
@@ -53,6 +53,7 @@ public class Warrior extends Character {
         System.out.println("Intelligence: " + intelligence);
     }
 
+    @Override
     public void useSpecialAbility() {
         System.out.println(name + " uses BERSERKER RAGE! Strength temporarily increased!");
     }
