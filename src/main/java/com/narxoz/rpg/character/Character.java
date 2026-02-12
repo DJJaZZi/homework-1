@@ -50,13 +50,13 @@ public abstract class Character {
 
     public void displayEquipment(){
         if (equippedWeapon != null) {
-            System.out.println(this.name + " have " + equippedWeapon);
+            System.out.println(this.name + " have " + equippedWeapon.getWeaponInfo() + " Damage: " + equippedWeapon.getDamage());
         }else{
             System.out.println(this.name + " does not have any weapon");
         }
 
         if (equippedArmor != null) {
-            System.out.println(this.name + " have " + equippedArmor);
+            System.out.println(this.name + " have " + equippedArmor.getArmorInfo() + " Defense: " + equippedArmor.getDefense());
         }else{
             System.out.println(this.name + " does not have any armor");
         }

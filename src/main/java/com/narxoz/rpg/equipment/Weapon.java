@@ -12,12 +12,15 @@ package com.narxoz.rpg.equipment;
  * Examples: damage, weapon type, special properties, etc.
  */
 public interface Weapon {
-
     // TODO: Add weapon behavior methods
     // Consider:
     // - int getDamage()
     // - String getWeaponInfo()
     // - String getWeaponType()
     // - any theme-specific properties?
+
+    int getDamage();
+    String getWeaponInfo();
+    String getWeaponType();
 
 }
