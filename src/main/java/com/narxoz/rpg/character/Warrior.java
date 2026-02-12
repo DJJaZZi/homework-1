@@ -16,20 +16,20 @@ package com.narxoz.rpg.character;
  * - Archer (balanced stats, ranged combat)
  * - (Optional) Additional classes: Rogue, Paladin, etc.
  */
-public class Warrior implements Character {
+public class Warrior extends Character {
 
-    private String name;
-    private int health;
-    private int mana;
-    private int strength;
-    private int intelligence;
+//    private String name;
+//    private int health;
+//    private int mana;
+//    private int strength;
+//    private int intelligence;
 
     // TODO: Add fields for equipped weapon and armor
     // Think: Should Warrior know about its equipment?
 
 
     public Warrior(String name) {
-        this.name = name;
+        super(name);
         // Warrior stats: high health and strength, low mana and intelligence
         this.health = 150;
         this.mana = 30;

@@ -11,8 +11,7 @@ package com.narxoz.rpg.character;
  * This represents the "Product" in the Factory Method pattern.
  * Different character classes (Warrior, Mage, Archer) are concrete products.
  */
-public interface Character {
-
+public abstract class Character {
     // TODO: Define common character behaviors
     // Consider methods like:
     // - String getName()
@@ -26,5 +25,18 @@ public interface Character {
     // TODO: Think about equipment
     // Should characters know about their equipped items?
     // How will you handle equipping weapons and armor?
+
+    String name;
+    int health;
+    int mana;
+    int strength;
+    int intelligence;
+
+    public Character(String name){
+        this.name = name;
+    }
+
+    public void displayStats(){}
+
 
 }
