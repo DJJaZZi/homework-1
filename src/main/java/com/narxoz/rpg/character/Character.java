@@ -61,6 +61,7 @@ public abstract class Character {
             System.out.println(this.name + " does not have any armor");
         }
     }
+
     public Character(String name){
         this.name = name;
     }

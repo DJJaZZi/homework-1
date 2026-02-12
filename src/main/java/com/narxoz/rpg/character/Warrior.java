@@ -40,6 +40,7 @@ public class Warrior extends Character {
     // TODO: Implement methods from Character interface
     // You need to define those methods in Character interface first!
 
+    @Override
     public String getName() {
         return name;
     }
@@ -63,5 +64,7 @@ public class Warrior extends Character {
     // - void equipWeapon(Weapon weapon)
     // - void equipArmor(Armor armor)
     // - void displayEquipment()
+
+
 
 }

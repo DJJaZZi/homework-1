@@ -1,12 +1,13 @@
 package com.narxoz.rpg.character;
 
-public class Mage extends Character{
-    public Mage(String name){
+public class Archer extends Character{
+
+    public Archer(String name){
         super(name);
-        this.health = 50;
-        this.mana = 160;
-        this.strength = 30;
-        this.intelligence = 90;
+        this.health = 90;
+        this.mana = 50;
+        this.strength = 60;
+        this.intelligence = 100;
     }
 
     @Override
@@ -16,7 +17,7 @@ public class Mage extends Character{
 
     @Override
     public void displayStats() {
-        System.out.println("=== " + name + " (Mage) ===");
+        System.out.println("=== " + name + " (Archer) ===");
         System.out.println("Health: " + health);
         System.out.println("Mana: " + mana);
         System.out.println("Strength: " + strength);
@@ -25,6 +26,6 @@ public class Mage extends Character{
 
     @Override
     public void useSpecialAbility() {
-        System.out.println(name + " Casts fireball! Deals massive area damage.");
+        System.out.println(name + " Drinks magic water! Strength and intelligence temporarily increased!");
     }
 }
