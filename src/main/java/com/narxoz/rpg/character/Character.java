@@ -26,17 +26,28 @@ public abstract class Character {
     // Should characters know about their equipped items?
     // How will you handle equipping weapons and armor?
 
-    String name;
-    int health;
-    int mana;
-    int strength;
-    int intelligence;
+    protected String name;
+    protected int health;
+    protected int mana;
+    protected int strength;
+    protected int intelligence;
 
     public Character(String name){
         this.name = name;
     }
 
-    public void displayStats(){}
+    public String getName() {
+        return name;
+    }
 
+    public void displayStats(){
+        System.out.println(this.name);
+        System.out.println("Health: " + health);
+        System.out.println("Mana: " + health);
+        System.out.println("Strength: " + strength);
+        System.out.println("Intelligence: " + intelligence);
+
+    }
+    public void useSpecialAbility(){}
 
 }
