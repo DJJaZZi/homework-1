@@ -4,6 +4,8 @@ import com.narxoz.rpg.character.Archer;
 import com.narxoz.rpg.character.Character;
 import com.narxoz.rpg.character.Mage;
 import com.narxoz.rpg.character.Warrior;
+import com.narxoz.rpg.equipment.Armor;
+import com.narxoz.rpg.equipment.Weapon;
 import com.narxoz.rpg.factory.*;
 
 /**
@@ -100,12 +102,43 @@ public class Main {
 //              Create new equipment factory "DragonSlayerFactory" which implements "EquipmentFactory"
 
 
+        Character soldier = createAndDisplayCharacter(ArcherFactory, "Hawkeye");
+        System.out.println("\n --- Equipping Characters --- ");
+        equipCharacter(soldier, rangerFactory);
+        System.out.println("\n --- Character Info --- ");
+        displayCharacterInfo(soldier);
+
+
         System.out.println("\n=== Demo Complete ===");
     }
 
+    private static Character createAndDisplayCharacter(CharacterFactory factory, String name){
+        Character character = factory.createCharacter(name);
+        System.out.println("\nCreating character: " + name);
+        character.displayStats();
+        return character;
+    }
+
+    private static void equipCharacter(Character character, EquipmentFactory equipmentFactory){
+        Weapon weapon = equipmentFactory.createWeapon();
+        Armor armor = equipmentFactory.createArmor();
+
+        character.equipWeapon(weapon);
+        character.equipArmor(armor);
+        System.out.println("\n --- " + character.getName() +  " Equipped --- ");
+    }
+
+    private static void displayCharacterInfo(Character character){
+        System.out.println("\n --- " + character.getName() + " Information --- ");
+        character.displayStats();
+        character.displayEquipment();
+        System.out.println();
+    }
     // TODO: Add helper methods as needed
     // Consider methods like:
     // - createAndDisplayCharacter(...)
     // - equipCharacter(...)
     // - displayCharacterInfo(...)
+
+
 }
