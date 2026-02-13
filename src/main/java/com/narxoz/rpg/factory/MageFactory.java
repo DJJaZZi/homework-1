@@ -5,7 +5,7 @@ import com.narxoz.rpg.character.Mage;
 
 public class MageFactory implements CharacterFactory{
     @Override
-    public Character createFactory(String name) {
+    public Character createCharacter(String name) {
         return new Mage(name);
     }
 }

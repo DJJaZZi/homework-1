@@ -5,7 +5,7 @@ import com.narxoz.rpg.character.Character;
 
 public class ArcherFactory implements CharacterFactory{
     @Override
-    public Character createFactory(String name) {
+    public Character createCharacter(String name) {
         return new Archer(name);
     }
 }

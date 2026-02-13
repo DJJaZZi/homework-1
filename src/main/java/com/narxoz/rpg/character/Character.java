@@ -50,13 +50,13 @@ public abstract class Character {
 
     public void displayEquipment(){
         if (equippedWeapon != null) {
-            System.out.println(this.name + " have " + equippedWeapon.getWeaponInfo() + " Damage: " + equippedWeapon.getDamage());
+            System.out.println(this.name + " have " + equippedWeapon.getWeaponInfo() + ", Damage: " + equippedWeapon.getDamage());
         }else{
             System.out.println(this.name + " does not have any weapon");
         }
 
         if (equippedArmor != null) {
-            System.out.println(this.name + " have " + equippedArmor.getArmorInfo() + " Defense: " + equippedArmor.getDefense());
+            System.out.println(this.name + " have " + equippedArmor.getArmorInfo() + ", Defense: " + equippedArmor.getDefense());
         }else{
             System.out.println(this.name + " does not have any armor");
         }
@@ -73,10 +73,9 @@ public abstract class Character {
     public void displayStats(){
         System.out.println(this.name);
         System.out.println("Health: " + health);
-        System.out.println("Mana: " + health);
+        System.out.println("Mana: " + mana);
         System.out.println("Strength: " + strength);
         System.out.println("Intelligence: " + intelligence);
-        System.out.println();
     }
 
     public void useSpecialAbility(){}
