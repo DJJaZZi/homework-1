@@ -1,17 +1,16 @@
 package com.narxoz.rpg.equipment;
 
-
-public class PlateArmor implements Armor{
+public class LeatherArmor implements Armor{
     private int defense;
     private String armorType;
     private int durability;
     private int weight;
 
-    public PlateArmor(){
-        this.defense = 40;
-        this.armorType = "Iron Armor";
-        this.durability = 60;
-        this.weight = 30;
+    public LeatherArmor(){
+        this.defense = 10;
+        this.armorType = "Leather armor";
+        this.durability = 10;
+        this.weight = 5;
     }
 
     @Override
@@ -26,7 +25,7 @@ public class PlateArmor implements Armor{
 
     @Override
     public String getArmorInfo() {
-        return "Plate armor (Medieval) - was forged by the best gunsmiths of the last century";
+        return "Leater Armor (Ranger) - aiming is much faster";
     }
 
     public void displayInfo(){

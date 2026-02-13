@@ -22,5 +22,6 @@ public interface Weapon {
     int getDamage();
     String getWeaponInfo();
     String getWeaponType();
+    void displayInfo();
 
 }

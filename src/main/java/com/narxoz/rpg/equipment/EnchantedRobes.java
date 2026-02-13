@@ -1,17 +1,16 @@
 package com.narxoz.rpg.equipment;
 
-
-public class PlateArmor implements Armor{
+public class EnchantedRobes implements Armor{
     private int defense;
     private String armorType;
     private int durability;
     private int weight;
 
-    public PlateArmor(){
+    public EnchantedRobes(){
         this.defense = 40;
-        this.armorType = "Iron Armor";
-        this.durability = 60;
-        this.weight = 30;
+        this.armorType = "Magic Armor";
+        this.durability = 50;
+        this.weight = 20;
     }
 
     @Override
@@ -26,7 +25,7 @@ public class PlateArmor implements Armor{
 
     @Override
     public String getArmorInfo() {
-        return "Plate armor (Medieval) - was forged by the best gunsmiths of the last century";
+        return "Enchanted Robes (Magic) - this armor will provide more mana and intelligence stats to its owner";
     }
 
     public void displayInfo(){
